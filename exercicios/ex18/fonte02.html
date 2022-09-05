@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+@font-face{
+    font-family:'love' ;
+    src: url('HappyNewYearParty.ttf') format('truetype');
+
+    /*tipos de format()
+    -opentype(otf)
+    -truetype(ttf)
+    -embedded-opentype
+    -truetype-aat (Apple Advanced Typography)
+    -svg
+    */
+}
+    
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    font-family:love,'Times New Roman', Times,  serif;
+    font-size: 3em;
+}
+p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+h2{
+    font-size: 2em;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus odit laborum atque sint ut vero eligendi neque. Aperiam corrupti deserunt aliquam repellat iste, eos accusamus modi, atque maiores pariatur quis?</p>
+    <abbr title="teste">
+        <h2>Titulo2</h2>
+    </abbr>
+    <ul type="square">
+        <li>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quam odit consectetur minima necessitatibus, accusantium dignissimos! Ab autem debitis ipsum aperiam eaque accusantium exercitationem? Corrupti labore voluptatem cumque quibusdam deleniti!</p>
+        </li>
+        <li><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nulla earum ea, corrupti ducimus nesciunt necessitatibus aspernatur quaerat, officiis, aperiam fuga voluptates reiciendis facilis voluptatum quas quo nostrum impedit debitis.</p></li>
+    </ol>
+</body>
+</html>

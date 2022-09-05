@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #818274;
+    margin: 0px;
+    text-align: center;
+    background-image: url(imagem/4.jpg);
+    background-size: cover;
+    
+    
+    
+}
+h1{
+   color: #BDE038; 
+}
+main{
+    
+    background-color: #A3AB78;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+section{
+    background-image: url(imagem/baner.jpg);
+    background-size: auto;
+    background-color: #506266;
+    margin: 10px ;
+    padding: 1px;
+    border-radius: 10px;
+}
+nav{
+    background-color:#71774c;
+    margin: 5px;
+    padding: 3px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    margin-top: 150px;
+}
+a{
+    text-decoration: none;
+    color: #10454F;
+    margin-left: 10px;
+}
+ 
+ 
+  #era{
+   
+   background-size: cover;
+   color: rgb(244, 245, 241);
+   text-shadow: 3px 3px 10px rgb(11, 11, 19)
+
+
+  }
+
+.s1{
+    font-weight: bold;
+    background-image: url(imagem/1.jpg);
+    background-repeat: no-repeat;
+    background-size:  cover;
+   display: inline-block;
+   width: 30em;
+   border-radius: 5px;
+   font-size: 19px;
+   text-align: justify;
+   color: aliceblue;
+   text-decoration: solid;
+   text-shadow: 2px 2px 5px#10454F;
+   
+
+}
+.s2{
+    background-image: url(imagem/2.jpg);
+    display: inline-block;
+    width: 30em;
+    border-radius: 5px;
+    font-size: 19px;
+    text-align: justify;
+    color: aliceblue;
+   text-decoration: solid;
+   text-shadow: 2px 2px 5px#10454F;
+    
+}
+div:hover{
+color: #d6ee7e;
+text-shadow: 5px 5px 10px;
+}
+
+.ons{
+    display: none;
+    color: red;
+    text-shadow:3px 3px 10px darkred;
+}
+
+div:hover > .ons{
+    display: block;
+}

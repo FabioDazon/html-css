@@ -1,0 +1,256 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+
+*/
+@font-face {
+    font-family: 'droid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+@font-face {
+    font-family: 'bebas';
+    src: url('fontes/BebasNeue-Regular.otf') format('opentype');
+}
+
+body{
+background-color: #82ebb1;
+
+}
+                                                                                                
+
+.droid{
+font-family: droid,Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #237B4A;
+    padding-top: 40px;
+    min-height: 150px;
+    text-align: center;
+    background-image:linear-gradient(to top,#093b1f,#3fee8e );
+    box-shadow: 3px 3px 10px 1px #135b33;
+    
+   
+   
+}
+header  h1{
+    font-family:bebas,Arial, Helvetica, sans-serif;    
+    color: white;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-weight: normal;
+   
+
+}
+header > p{
+    font-family:Arial, Helvetica, sans-serif;    
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 600px;
+    padding-bottom: 50px;
+
+    
+}
+
+main {
+    background-color: white;
+    padding:20px;
+    box-shadow: 1px 1px 10px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px; 
+    
+    
+    
+}
+h1{
+    font-family: droid,Arial, Helvetica, sans-serif; 
+    color: #135b33;
+    font-weight: normal;
+font-size: 1.8em;
+    
+}
+main p{
+font-family: Arial, Helvetica, sans-serif;
+margin: 15px 0px;
+text-align: justify;
+text-indent: 30px;
+font-size: 1em;
+line-height: 2em;
+
+    
+}
+h2{
+   text-align:justify;
+   color: #237B4A;
+   background-image: linear-gradient(to right, #5cd191,#7ad6a3a6,#bedaca00);
+   text-indent: 8px;
+   font-size: 1.3em;
+ font-weight: normal;
+   
+}
+nav{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #093b1f;
+    padding: 10px;
+    box-shadow: 0px 0px 7px  hsl(0, 0, 0.192%);
+       
+}
+nav > a{
+    color:#44d284;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition-duration: .5s;
+    border-radius: 5px;
+    
+   
+    
+}
+nav > a:hover{
+    background-color: #3fee8e ;     
+    color: #03080173;
+       
+    
+}
+span{
+    color: #135b33;
+}
+
+picture{
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    width: 100%;
+}
+
+.bug{
+    max-width:  350px;
+    display: block;
+    margin: auto;
+    
+}
+.video{
+    
+    background-color: 
+    #135b33;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 20px;
+    padding-bottom: 56.9%;
+    position: relative;
+}
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside{
+    background-color:#91eebb ;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.34);
+    
+    
+     
+ }
+
+h3{
+    border-radius: 10px 10px 0px 0px;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #135b33;
+   color:white;
+   padding:10px ;   
+   margin: -10px -10px 0px -10px;
+}
+
+.p2{
+margin: 15px 0px;
+text-align: justify;
+text-indent: 30px;
+font-size: 1em;
+line-height: 2em;
+   
+}
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+li:hover{
+    color: #1c673c;
+}
+footer{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #093b1f;
+    color: white;
+    text-align: center;
+    padding: 5px;
+   font-size: 0.8em;
+   
+}
+
+
+strong{
+    color: #1c673c;
+
+}
+section a{
+    text-decoration: none;
+    color:#093b1f;
+    background-color: #5cd191;
+    padding: 3px;
+    content: '\1F517';
+}
+main a:hover{
+    background-color: #91eebb;
+    text-decoration: underline;
+}
+aside a{
+   color: #093b1f;
+   text-decoration: none; 
+   font-weight: bold;
+}
+aside a:hover{
+   color: #237B4A;
+    text-decoration: underline;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+color:#6da886;
+text-decoration: underline;
+}
+.externo::after{
+    content:'\00A0\1F517';
+
+}
+.androidh::after{
+    content:'\00A0\1F517';
+
+}
+
