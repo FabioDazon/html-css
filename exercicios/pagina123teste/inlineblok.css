@@ -1,0 +1,30 @@
+*{
+margin: 0px;
+padding: 0px;
+border: 0px;
+}
+.ol,ul,li{
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    display:inline-block ;
+    
+   
+}
+
+.caixas{
+    text-align-last: justify;
+    color: white;
+    
+}
+.a1{
+    background-color: aqua;
+    text-align: center;
+    
+}
+.a2{
+    background-color: green;
+}
+.a3{
+    background-color: rgb(188, 227, 13);
+}
