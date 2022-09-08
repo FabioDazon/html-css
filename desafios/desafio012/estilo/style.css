@@ -112,16 +112,4 @@ footer{
      padding: 10px;
 
 }
-div{
-    width: 100%;
-}
-div > img{
-    position:absolute ;
-    left: 30%;
-    max-width: 300px;
-    transform: translate(50%, -50%);
-    width: 34%;
-    height: 20%;  
-    
-    
-}
+
