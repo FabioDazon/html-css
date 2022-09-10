@@ -16,7 +16,7 @@ h1{
 }
 main{
     
-    background-color: #A3AB78;
+    background-color: #1d05397e;
     padding: 2px;
     margin-left: 5px;
     margin-right: 5px;
@@ -29,9 +29,12 @@ section{
     margin: 10px ;
     padding: 1px;
     border-radius: 10px;
+    
+
+    
 }
 nav{
-    background-color:#71774c;
+    background-color:#60B8E0;
     margin: 5px;
     padding: 3px;
 }
@@ -44,18 +47,18 @@ footer{
 }
 a{
     text-decoration: none;
-    color: #10454F;
+    color: #010607;
     margin-left: 10px;
 }
  
  
-  #era{
+  section#era{
    
    background-size: cover;
    color: rgb(244, 245, 241);
-   text-shadow: 3px 3px 10px rgb(11, 11, 19)
-
-
+   text-shadow: 3px 3px 10px rgb(11, 11, 19);
+    background-color: black;
+    background-attachment: fixed;
   }
 
 .s1{
@@ -71,6 +74,7 @@ a{
    color: aliceblue;
    text-decoration: solid;
    text-shadow: 2px 2px 5px#10454F;
+  
    
 
 }
@@ -84,6 +88,8 @@ a{
     color: aliceblue;
    text-decoration: solid;
    text-shadow: 2px 2px 5px#10454F;
+   
+   
     
 }
 div:hover{
@@ -99,4 +105,17 @@ text-shadow: 5px 5px 10px;
 
 div:hover > .ons{
     display: block;
+}
+.p{
+    background-color: #5a70ed53;
+    color: #4aebc8;
+}
+.nherois{
+    background-color: #5a70ed44;
+    color: #5EEFF7;
+}
+
+.vnovos{
+    background-color: #5a70ed40;
+    color: #5EEFF7;
 }
