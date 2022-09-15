@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Responsiva</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            
+            
+        }
+        table{
+            
+            border-collapse: collapse;
+            
+        }
+        
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            
+            
+            
+
+        }
+        tr:nth-child(even){
+            background-color: rgb(208, 233, 231);
+        }
+        tr:nth-child(odd){
+            background-color: lightseagreen;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 20px;
+
+        }
+        #container{
+            overflow-x: auto;
+        }
+        col.cprod{
+            background-color: aqua;
+        }
+        .mes{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela Responsiva</h1>
+    
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cprod">
+            </colgroup>
+            <caption>Tabela</caption>
+            <thead>
+                <tr class="mes">
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tv Smart</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>06</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>Caixa de Som</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>01</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>11</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>09</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Guarda Roupas</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>17</td>
+                    <td>11</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Freezer</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>12</td>
+                    <td>17</td>
+                    <td>04</td>
+                    <td>18</td>
+                    <td>09</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Redmi 9</td>
+                    <td>06</td>
+                    <td>02</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Aspirador de pó</td>
+                    <td>04</td>
+                    <td>08</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>08</td>
+                    <td>02</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>Play Station 5</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>18</td>
+                    <td>11</td>
+                    <td>04</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>02</td>
+                    <td>14</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
