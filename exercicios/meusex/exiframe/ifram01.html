@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades</title>
+    <style>
+        
+        body{
+            background-color: deepskyblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            
+        }
+        h1{
+            background-color:rgba(12, 58, 97, 0.826) ;
+            color:aliceblue;
+            width: 300px;
+            margin: auto;
+            box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.353);
+            border-radius: 8px;
+            
+
+
+        }
+        iframe{
+            width: 450px;
+            height: 500px;
+            background-color: blue;
+        }
+        ul{
+            
+            display:inline block;
+            margin:auto;
+            margin-top: 10px;
+            margin-right: 45px
+            
+            
+            
+        }
+        li{
+            
+            margin-top: 5px;
+        }
+        
+        li > a{
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+            ;
+            
+
+        }
+        li > a:hover{
+            background-color: rgba(21, 12, 121, 0.525);
+            padding: 5px;
+            border-radius: 15px;
+            color: aliceblue;
+            transition-duration: .3s;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.337);
+        }
+        li > a:active{
+            color: aqua;
+        }
+        img{
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variedades do Dazon </h1>
+    <ul>
+        <li><a href="paginas/pagina2.html"target="frame">GAMES</a></li>
+        <li><a href="paginas/pag03.html"target="frame">QUADRINHOS</a></li>
+        <li><a href="paginas/pag04.html"target="frame">MUSICA</a></li>
+        <li><a href="paginas/pag5.html"target="frame">ARTE</a></li>
+    </ul>
+    
+    <p>Encontre aqui muitas novidades no mundo da musica, dos games, comics e arte no papel!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<img src='imagem/dazon.jpeg'> "> </iframe>
+
+</body>
+</html>
