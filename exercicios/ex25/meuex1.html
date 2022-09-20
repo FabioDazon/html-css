@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario meu</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <h1>Inscrição</h1>
+        <label for="inome">Nome:</label autocomplete="no"  >
+        <input type="text" name="nome" id="inome" required size="15" autocomplete="username" placeholder="digite seu nome">
+        <label for="isobre">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="isobre" placeholder="digite o sobrenome">
+        <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" placeholder="digite sua idade" size="15" autocomplete="bday" required>
+            <label for="isex">Sexo:</label>
+            <input type="radio" name="masc" id="isex" autocomplete="sex">Masculino 
+            <input type="radio" name="fem" id="isex">Feminino
+        </p>
+        <p><input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
