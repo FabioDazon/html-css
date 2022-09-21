@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        
+        <h1>Promoção Camaro</h1>
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>                                
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" autocomplete="name" placeholder="seu nome" required minlength="3">
+            </p>
+            <p>
+                <label for="iidade">Idade</label>
+                <input type="number" name="idade" id="iidade"   placeholder="sua idade" required minlength="3">
+            </p>
+        </p>
+        <label for="itel">Telefone</label>
+        <input type="tel" autocomplete="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"   required placeholder="(xx)xxxx-xxxxx">
+         
+        <p>
+             <p>
+                <legend>Sexo</legend>
+                <input type="radio" name="sex" id="isexmas" checked value="m"><label for="isexmas">Masculino</label><br>
+                <input type="radio" name="sex" id="isexfem"  value="f"><label for="isexfem">Feminino</label>
+
+             
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+             </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esporte preferido.               
+            </legend>
+            <input type="checkbox" name="esfoot" id="iesfoot"><label for="iesfoot">Footbal</label><br>
+            <input type="checkbox" name="esbol" id="iesbol"><label for="iesbol">Boliche</label><br>
+            <input type="checkbox" name="esping" id="iesping"><label for="iesping">PingPong</label><br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esk" id="iesk"><label for="iesk">Skate</label> <br>
+               <input type="checkbox" name="exbox" id="iesbox"><label for="iesbox">                Boxe</label>
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
