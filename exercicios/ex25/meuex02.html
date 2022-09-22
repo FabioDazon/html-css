@@ -8,50 +8,169 @@
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
+            
         }
+        body{
+           background-color: aquamarine;
+           
+        }
+        h1{
+            margin: 25px;
+           
+        }
+        main{
+            background-color: rgba(254, 254, 255, 0.623);
+            margin:20px;
+           width:530px;
+           box-shadow: 3px 3px 8px rgba(4, 14, 17, 0.384);
+        }
+        fieldset{
+            border: 3px solid rgba(0, 0, 0, 0.46);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.359);
+            margin: 25px;
+            
+
+        }
+        legend{
+            font-weight: bolder;
+            font-size: 1.5em;
+        }
+        .clabel{
+            font-weight: bolder;
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            margin-top: 20px;
+            margin: 25px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.359);
+        }
+        caption{
+            padding: 10px;
+            font-weight: bolder;
+            background-color: rgb(16, 54, 54);
+            color: aqua;
+            font-size: 2.5em;
+        }
+        th,tr,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            
+            
+        }
+        th{
+            color: rgb(24, 11, 105);
+        }
+        .tr1 > th{
+            color: black;
+            background-color: aqua;
+        }
+        .cnome{
+          background-color: aqua;
+          
+        }
+        .r1t{
+            color: rgb(29, 27, 192);
+        }
+        
+         
     </style>
 </head>
 <body>
-    <form action="cadastro.php" method="post" autocomplete="on">
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
         
-        <h1>Promoção Camaro</h1>
-        <fieldset>
-            <legend>Cadastro</legend>
-            <p>                                
-                <label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome" autocomplete="name" placeholder="seu nome" required minlength="3">
+            <h1>Promoção Camaro</h1>
+            <fieldset>
+                <legend>Cadastro</legend>
+                <p>
+                    <label for="inome" class="clabel">Nome:</label>
+                    <input type="text" name="nome" id="inome" autocomplete="name" placeholder="seu nome" required minlength="3">
+                </p>
+                <p>
+                    <label for="iidade" class="clabel">Idade:</label>
+                    <input type="number" name="idade" id="iidade"   placeholder="sua idade" required minlength="3">
+                </p>
             </p>
+            <label for="itel" class="clabel">Telefone:</label>
+            <input type="tel" autocomplete="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"   required placeholder="(xx)xxxx-xxxxx">
+        
             <p>
-                <label for="iidade">Idade</label>
-                <input type="number" name="idade" id="iidade"   placeholder="sua idade" required minlength="3">
-            </p>
-        </p>
-        <label for="itel">Telefone</label>
-        <input type="tel" autocomplete="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"   required placeholder="(xx)xxxx-xxxxx">
-         
-        <p>
-             <p>
-                <legend>Sexo</legend>
-                <input type="radio" name="sex" id="isexmas" checked value="m"><label for="isexmas">Masculino</label><br>
-                <input type="radio" name="sex" id="isexfem"  value="f"><label for="isexfem">Feminino</label>
-
-             
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-             </p>
-        </fieldset>
-        <fieldset>
-            <legend>Esporte preferido.               
-            </legend>
-            <input type="checkbox" name="esfoot" id="iesfoot"><label for="iesfoot">Footbal</label><br>
-            <input type="checkbox" name="esbol" id="iesbol"><label for="iesbol">Boliche</label><br>
-            <input type="checkbox" name="esping" id="iesping"><label for="iesping">PingPong</label><br>
-            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
-            <input type="checkbox" name="esk" id="iesk"><label for="iesk">Skate</label> <br>
-               <input type="checkbox" name="exbox" id="iesbox"><label for="iesbox">                Boxe</label>
-        </fieldset>
-
-    </form>
+                 <p>
+                    <span class="clabel">Sexo</span><br>
+                    <input type="radio" name="sex" id="isexmas" checked value="m"><label for="isexmas" >Masculino</label><br>
+                    <input type="radio" name="sex" id="isexfem"  value="f"><label for="isexfem">Feminino</label>
+        
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                 </p>
+            </fieldset>
+            <fieldset>
+                <legend>Esporte preferido.
+                </legend>
+                <input type="checkbox" name="esfoot" id="iesfoot"><label for="iesfoot">Footbal</label><br>
+                <input type="checkbox" name="esbol" id="iesbol"><label for="iesbol">Boliche</label><br>
+                <input type="checkbox" name="esping" id="iesping"><label for="iesping">PingPong</label><br>
+                <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
+                <input type="checkbox" name="esk" id="iesk"><label for="iesk">Skate</label> <br>
+                   <input type="checkbox" name="exbox" id="iesbox"><label for="iesbox">Boxe</label>         
+            </fieldset>
+        </form>
+        
+        <table>
+            <colgroup>
+            <col class="cnome">
+            <col class="ctel">
+            <col class="cend">
+            <col class="ccid">
+            <col class="cuf">
+            </colgroup>
+            <thead>
+                <caption>Ganhadores de Agosto</caption>
+                <tr class="tr1">
+                    <th scope="col">Nome</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Endereço</th>
+                    <th scope="col">Cidade</th>
+                    <th scope="col">UF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr >
+                    <th scope="row">Fabio Laureano</th>
+                    <td>(53)981513051</td>
+                    <td>Sitio Iatibaia 530-2</td>
+                    <td>Rio Grande</td>
+                    <td>RS</td>
+                </tr>
+                <tr>
+                    <th scope="row">Maria Andrade</th>
+                    <td>(22)846541221</td>
+                    <td>Dalvo Trombeta</td>
+                    <td>Criciuma</td>
+                    <td>SC</td>
+                </tr>
+                <tr>
+                    <th scope="row">Esteve Cofax</th>
+                    <td>(55)981849932</td>
+                    <td>Capitão Ojuara-43</td>
+                    <td>São Paulo</td>
+                    <td>SP</td>
+                </tr>
+                <tr>
+                    <th scope="row">Januario Neto</th>
+                    <td>(71)999848451</td>
+                    <td>Palo Alto</td>
+                    <td>Ceara</td>
+                    <td>CE</td>
+                </tr>
+                <table>
+        
+                </table>
+            </tbody>
+        </table>
+    </main>
     
 </body>
 </html>
