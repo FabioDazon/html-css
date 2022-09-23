@@ -85,22 +85,33 @@
             <fieldset>
                 <legend>Cadastro</legend>
                 <p>
-                    <label for="inome" class="clabel">Nome:</label>
+                    <label for="inome" class="clabel">Nome</label><br>
                     <input type="text" name="nome" id="inome" autocomplete="name" placeholder="seu nome" required minlength="3">
                 </p>
                 <p>
-                    <label for="iidade" class="clabel">Idade:</label>
-                    <input type="number" name="idade" id="iidade"   placeholder="sua idade" required minlength="3">
-                </p>
+                    <label for="iano" class="clabel"> Nascimento</label><br>
+                    <input type="number" name="idade" id="iano"    required placeholder="2020" oninput="calc()">
+                    <label for="iidade">Sua idade é</label>
+                    <output id="iidade">0</output>
+                    
+                </p>  
+                
+                
+
+                  
+                
+                
+                   
+                
             </p>
-            <label for="itel" class="clabel">Telefone:</label>
+            <label for="itel" class="clabel">Telefone</label><br>
             <input type="tel" autocomplete="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$"   required placeholder="(xx)xxxx-xxxxx">
         
             <p>
                  <p>
                     <span class="clabel">Sexo</span><br>
                     <input type="radio" name="sex" id="isexmas" checked value="m"><label for="isexmas" >Masculino</label><br>
-                    <input type="radio" name="sex" id="isexfem"  value="f"><label for="isexfem">Feminino</label>
+                    <input type="radio" name="sex" id="isexfem"  value="f"><label for="isexfem">Feminino</label><br><br>
         
                     <input type="submit" value="Enviar">
                     <input type="reset" value="Limpar">
@@ -114,9 +125,42 @@
                 <input type="checkbox" name="esping" id="iesping"><label for="iesping">PingPong</label><br>
                 <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label><br>
                 <input type="checkbox" name="esk" id="iesk"><label for="iesk">Skate</label> <br>
-                   <input type="checkbox" name="exbox" id="iesbox"><label for="iesbox">Boxe</label>         
+                   <input type="checkbox" name="exbox" id="iesbox"><label for="iesbox">Boxe</label>   
+                   
             </fieldset>
         </form>
+        <fieldset>
+            <legend>Sua opinião</legend>
+            <p>
+                <label for="iopi" class="clabel">De sua ideia!</label><br>
+                <textarea name="msg" id="iopi" cols="30" rows="10" placeholder="Sua mensagem..."></textarea>
+            </p>
+            <p>
+                <label for="inum1">numero 1</label>
+                <input type="number" name="num1" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p>
+                <label for="inum2">numero 2</label>
+                <input type="number" name="num2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+            </p>
+            <p><label for="isoma">Soma</label>
+            <output id="isoma">0</output>
+        </p>
+            <p>
+                
+                    <label for="inota">Nos de sua nota!</label><br>
+                    <input type="range" name="nota" id="inota" min="0" max="10" value="5" oninput="ival.innerHTML = Number(inota.value)">
+                    <output id="ival">5</output>
+                      
+            </p>
+        </fieldset>
+        <script>
+            function calc(){
+                let atual = new Date().getFullYear()
+                iidade.innerHTML = Number(atual) - Number(iano.value)
+            }
+          
+        </script>
         
         <table>
             <colgroup>
@@ -171,6 +215,7 @@
             </tbody>
         </table>
     </main>
+
     
 </body>
 </html>
