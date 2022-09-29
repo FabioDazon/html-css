@@ -1,39 +1,39 @@
 @charset "UTF-8";
 
-/*declaraões gerais*/
+/*declarações gerais*/
 *{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+   padding: 0px;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
+html,body{
+    
     width: 100vw;
     height: 100vh;
-    background-color: #233eff;
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color:#233eff ;
+    color:white;
+    text-shadow: 2px 3px 8px #182ab4;
+}
 
-}
-h1{
-    color: white;
-    text-shadow: 2px 2px 0px #233eff;
-    padding: 10px;
-}
-/*declarações retrato*/
-@media screen and (orientation: portrait) {
+/*media feature portrait*/
+@media screen and (orientation:portrait) {
     body{
         background-image: url(../imagens/cev-portrait.jpg);
-
+        background-repeat:no-repeat ;
         background-position: center bottom;
+        background-size: contain;
+        
+    } 
+}
+/*media feature landscape*/
+@media screen and (orientation:landscape) {
+    body{
+        background-image: url(../imagens/cev-landscape.jpg);
+        background-position:  left bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
     }
+    
 }
 
-/*declarações paisagem*/
-@media screen and (orientation: landscape) {
-                body{
-        background-image: url(../imagens/cev-landscape.jpg);
-        
-        background-position: left bottom;
-    }
-}
