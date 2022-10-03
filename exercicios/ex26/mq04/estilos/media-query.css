@@ -13,7 +13,20 @@ Grandes telas: acima de 1200px
     *{
         font-family: 'Courier New', Courier, monospace;
         color: black;
+        
     }
+    main > h1{
+        color: black;
+        text-shadow: none;
+    }
+    main{
+        border: 2 
+    }
+    main::after{
+        text-align: center ;
+        content: 'Site feito por Fabio Laureano.';
+    }
+
     #fone{display: none;}
     #tablet{display: none;}
     #impressora{display: block;}
