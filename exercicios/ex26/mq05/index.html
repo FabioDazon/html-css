@@ -9,8 +9,10 @@
       rel="stylesheet">
 
     <link rel="stylesheet" href="estilos/style.css" >
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body><header>
+<body onresize="mudouTamanho()">
+    <header>
     <h1>Meu Site</h1>
     <i id="burger" class="material-icons" onclick="clickMenu()">
         menu
@@ -37,7 +39,14 @@
         </article>
     </main>
     <script>
-        function clickMenu(){
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
             if (itens.style.display == 'block'){
             itens.style.display = 'none'
         }else{
