@@ -50,6 +50,7 @@ menu > ul > li > a{
 }
 li a:hover{
     background-color: #10044e;
+    transition: .5s;
 }
 main{
     width: 90vw;
